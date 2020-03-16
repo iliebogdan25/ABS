@@ -3,15 +3,15 @@ package tasks.services;
 
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
-import tasks.model.LinkedTaskList;
 import tasks.model.Task;
-import tasks.model.TaskList;
 import tasks.view.*;
 
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TaskIO {
     private static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("[yyyy-MM-dd HH:mm:ss.SSS]");
@@ -21,7 +21,7 @@ public class TaskIO {
     private static final int secondsInMin = 60;
 
     private static final Logger log = Logger.getLogger(TaskIO.class.getName());
-    public static void write(TaskList tasks, OutputStream out) throws IOException {
+    public static void write(List<Task> tasks, OutputStream out) throws IOException {
         DataOutputStream dataOutputStream = new DataOutputStream(out);
         try {
             dataOutputStream.writeInt(tasks.size());
@@ -43,12 +43,11 @@ public class TaskIO {
             dataOutputStream.close();
         }
     }
-    public static void read(TaskList tasks, InputStream in)throws IOException {
+    public static void read(List<Task> tasks, InputStream in)throws IOException {
         DataInputStream dataInputStream = new DataInputStream(in);
         try {
             int listLength = dataInputStream.readInt();
             for (int i = 0; i < listLength; i++){
-                int titleLength = dataInputStream.readInt();
                 String title = dataInputStream.readUTF();
                 boolean isActive = dataInputStream.readBoolean();
                 int interval = dataInputStream.readInt();
@@ -69,7 +68,7 @@ public class TaskIO {
             dataInputStream.close();
         }
     }
-    public static void writeBinary(TaskList tasks, File file)throws IOException{
+    public static void writeBinary(List<Task> tasks, File file)throws IOException{
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(file);
@@ -83,7 +82,7 @@ public class TaskIO {
         }
     }
 
-    public static void readBinary(TaskList tasks, File file) throws IOException{
+    public static void readBinary(List<Task> tasks, File file) throws IOException{
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(file);
@@ -96,9 +95,9 @@ public class TaskIO {
             fis.close();
         }
     }
-    public static void write(TaskList tasks, Writer out) throws IOException {
+    public static void write(List<Task> tasks, Writer out) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(out);
-        Task lastTask = tasks.getTask(tasks.size()-1);
+        Task lastTask = tasks.get(tasks.size()-1);
         for (Task t : tasks){
             bufferedWriter.write(getFormattedTask(t));
             bufferedWriter.write(t.equals(lastTask) ? ';' : '.');
@@ -108,7 +107,7 @@ public class TaskIO {
 
     }
 
-    public static void read(TaskList tasks, Reader in)  throws IOException {
+    public static void read(List<Task> tasks, Reader in)  throws IOException {
         BufferedReader reader = new BufferedReader(in);
         String line;
         Task t;
@@ -119,7 +118,7 @@ public class TaskIO {
         reader.close();
 
     }
-    public static void writeText(TaskList tasks, File file) throws IOException {
+    public static void writeText(List<Task> tasks, File file) throws IOException {
         FileWriter fileWriter = new FileWriter(file);
         try {
             write(tasks, fileWriter);
@@ -132,7 +131,7 @@ public class TaskIO {
         }
 
     }
-    public static void readText(TaskList tasks, File file) throws IOException {
+    public static void readText(List<Task> tasks, File file) throws IOException {
         FileReader fileReader = new FileReader(file);
         try {
             read(tasks, fileReader);
@@ -289,7 +288,7 @@ public class TaskIO {
 
 
     public static void rewriteFile(ObservableList<Task> tasksList) {
-        LinkedTaskList taskList = new LinkedTaskList();
+        List<Task> taskList = new LinkedList<>();
         for (Task t : tasksList){
             taskList.add(t);
         }

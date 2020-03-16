@@ -2,23 +2,23 @@ package tasks.services;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
 
 import java.util.Date;
+import java.util.List;
 
 public class TasksService {
 
-    private ArrayTaskList tasks;
+    private List<Task> tasks;
 
-    public TasksService(ArrayTaskList tasks){
+    public TasksService(List<Task> tasks){
         this.tasks = tasks;
     }
 
 
     public ObservableList<Task> getObservableList(){
-        return FXCollections.observableArrayList(tasks.getAll());
+        return FXCollections.observableArrayList(tasks);
     }
     public String getIntervalInHours(Task task){
         int seconds = task.getRepeatInterval();

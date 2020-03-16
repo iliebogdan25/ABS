@@ -89,6 +89,8 @@ public class NewEditController {
     @FXML
     public void initialize(){
         log.info("new/edit window initializing");
+        datePickerEnd.setValue(LocalDate.now());
+        fieldInterval.setText(DEFAULT_INTERVAL_TIME);
 //        switch (clickedButton.getId()){
 //            case  "btnNew" : initNewWindow("New Task");
 //                break;
@@ -132,13 +134,9 @@ public class NewEditController {
         }
     }
     private void hideRepeatedTaskModule(boolean toShow){
-        datePickerEnd.setDisable(toShow);
         fieldInterval.setDisable(toShow);
-        txtFieldTimeEnd.setDisable(toShow);
 
-        datePickerEnd.setValue(LocalDate.now());
         txtFieldTimeEnd.setText(DEFAULT_END_TIME);
-        fieldInterval.setText(DEFAULT_INTERVAL_TIME);
     }
 
     @FXML
