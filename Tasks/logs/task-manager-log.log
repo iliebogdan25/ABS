@@ -1,0 +1,58 @@
+2020-02-26 10:56:14 INFO  Main:38 - saved data reading
+2020-02-26 10:56:14 INFO  Main:43 - application start
+2020-02-26 10:56:15 INFO  Controller:75 - Main controller initializing
+2020-02-26 10:56:24 INFO  TaskInfoController:26 - task info window initializing
+2020-02-26 10:56:24 ERROR Controller:128 - error loading task-info.fxml
+2020-03-16 20:23:01 INFO  Main:38 - saved data reading
+2020-03-16 20:23:01 INFO  Main:43 - application start
+2020-03-16 20:23:02 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:23:05 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:23:27 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:32:48 INFO  Main:41 - saved data reading
+2020-03-16 20:32:48 INFO  Main:46 - application start
+2020-03-16 20:32:48 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:32:53 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:33:00 INFO  Main:41 - saved data reading
+2020-03-16 20:33:00 INFO  Main:46 - application start
+2020-03-16 20:33:00 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:37:07 INFO  Main:40 - saved data reading
+2020-03-16 20:37:07 INFO  Main:45 - application start
+2020-03-16 20:37:08 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:37:11 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:17 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:22 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:28 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:32 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:35 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:37:39 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:41:31 INFO  Main:40 - saved data reading
+2020-03-16 20:41:31 INFO  Main:45 - application start
+2020-03-16 20:41:32 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:41:34 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:41:57 INFO  Main:40 - saved data reading
+2020-03-16 20:41:57 INFO  Main:45 - application start
+2020-03-16 20:41:57 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:42:00 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:42:29 INFO  Main:40 - saved data reading
+2020-03-16 20:42:29 INFO  Main:45 - application start
+2020-03-16 20:42:30 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:42:32 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:45:09 INFO  Main:40 - saved data reading
+2020-03-16 20:45:09 INFO  Main:45 - application start
+2020-03-16 20:45:10 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:45:12 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:45:20 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:45:48 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:45:55 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:46:01 INFO  NewEditController:91 - new/edit window initializing
+2020-03-16 20:46:11 INFO  Main:40 - saved data reading
+2020-03-16 20:46:11 ERROR TaskIO:92 - IO exception reading or writing file
+2020-03-16 20:46:11 INFO  Main:45 - application start
+2020-03-16 20:46:11 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:47:15 INFO  Main:38 - saved data reading
+2020-03-16 20:47:15 INFO  Main:43 - application start
+2020-03-16 20:47:16 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:47:26 INFO  Main:38 - saved data reading
+2020-03-16 20:47:26 INFO  Main:43 - application start
+2020-03-16 20:47:26 INFO  Controller:75 - Main controller initializing
+2020-03-16 20:47:29 INFO  NewEditController:91 - new/edit window initializing
