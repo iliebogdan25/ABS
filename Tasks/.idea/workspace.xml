@@ -2,24 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/ArrayTaskList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/LinkedTaskList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TaskList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/TaskInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/TaskInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Tasks" />
@@ -29,6 +53,7 @@
       <list>
         <option value="UML Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -190,6 +215,42 @@
     <state width="300" height="120" key="javadoc.popup.new/0.0.1280.680@0.0.1280.680" />
     <state x="75" y="50" key="new project wizard" />
     <state x="75" y="50" key="new project wizard/0.0.1280.680@0.0.1280.680" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
+          <line>283</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>

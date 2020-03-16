@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox fx:id="rootVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasks.controller.NewEditController">
+<VBox fx:id="rootVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <AnchorPane prefHeight="144.0" prefWidth="600.0">
          <children>
@@ -20,9 +20,9 @@
          <children>
             <Label layoutX="30.0" layoutY="25.0" text="End" />
             <Label layoutX="30.0" layoutY="80.0" text="Interval" />
-            <DatePicker fx:id="datePickerEnd" disable="true" layoutX="94.0" layoutY="20.0" prefHeight="31.0" prefWidth="253.0" />
+            <DatePicker fx:id="datePickerEnd"  layoutX="94.0" layoutY="20.0" prefHeight="31.0" prefWidth="253.0" />
             <TextField fx:id="fieldInterval" disable="true" layoutX="94.0" layoutY="75.0" prefHeight="31.0" prefWidth="288.0" promptText="HH:mm" />
-            <TextField fx:id="txtFieldTimeEnd" disable="true" layoutX="347.0" layoutY="20.0" prefHeight="31.0" prefWidth="84.0" />
+            <TextField fx:id="txtFieldTimeEnd" layoutX="347.0" layoutY="20.0" prefHeight="31.0" prefWidth="84.0" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="134.0" prefWidth="600.0">

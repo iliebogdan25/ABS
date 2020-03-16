@@ -83,18 +83,29 @@ public class Controller {
 
     @FXML
     public void showTaskDialog(ActionEvent actionEvent){
-        Object source = actionEvent.getSource();
-        NewEditController.setClickedButton((Button) source);
+        Button source = (Button) actionEvent.getSource();
+        NewEditController.setClickedButton( source);
 
         try {
             editNewStage = new Stage();
             NewEditController.setCurrentStage(editNewStage);
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/new-edit-task.fxml"));
+            if (source.getId().equals("btnEdit")) {
+                loader.setController(new EditController());
+            } else {
+                loader.setController(new NewController());
+            }
             Parent root = loader.load();//getClass().getResource("/fxml/new-edit-task.fxml"));
+
             NewEditController editCtrl = loader.getController();
             editCtrl.setService(service);
             editCtrl.setTasksList(tasksList);
-            editCtrl.setCurrentTask((Task)mainTable.getSelectionModel().getSelectedItem());
+            final boolean mustBeSelected = source.getId().equals("btnEdit");
+            final Task selectedTask = getSelectedTask(mustBeSelected);
+            if (selectedTask == null && mustBeSelected) {
+                return;
+            }
+            editCtrl.setCurrentTask(selectedTask);
             editNewStage.setScene(new Scene(root, 600, 350));
             editNewStage.setResizable(false);
             editNewStage.initOwner(Main.primaryStage);
@@ -108,12 +119,21 @@ public class Controller {
     @FXML
     public void deleteTask(){
         Task toDelete = (Task)tasks.getSelectionModel().getSelectedItem();
+        if (toDelete == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "No task selected.", ButtonType.CLOSE);
+            alert.showAndWait();
+            return;
+        }
         tasksList.remove(toDelete);
         TaskIO.rewriteFile(tasksList);
     }
     @FXML
     public void showDetailedInfo(){
         try {
+            Task currentTask = getSelectedTask(true);
+            if (currentTask == null) {
+                return;
+            }
             Stage stage = new Stage();
             FXMLLoader loader =new FXMLLoader(getClass().getResource("/fxml/task-info.fxml"));
             Parent root = loader.load();
@@ -149,4 +169,13 @@ public class Controller {
 
     }
 
+    private Task getSelectedTask(final boolean showWarning) {
+        Task currentTask = (Task)Controller.mainTable.getSelectionModel().getSelectedItem();
+        if (currentTask == null && showWarning) {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "No task selected.", ButtonType.CLOSE);
+            alert.showAndWait();
+            return null;
+        }
+        return currentTask;
+    }
 }
