@@ -91,8 +91,7 @@ public abstract class NewEditController {
     public abstract void saveChanges();
 
 
-
-    protected Task makeTask() throws IllegalArgumentException {
+    protected Task makeTask() {
         Task result;
         String newTitle = fieldTitle.getText();
         Date startDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerStart.getValue());//ONLY date!!without time
@@ -108,7 +107,7 @@ public abstract class NewEditController {
         }
         boolean isActive = checkBoxActive.isSelected();
         result.setActive(isActive);
-        System.out.println(result);
+        log.info(result);
         return result;
     }
 }

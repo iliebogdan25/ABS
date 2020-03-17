@@ -1,17 +1,17 @@
 package tasks.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
-import tasks.model.Task;
-
+import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import tasks.model.Task;
 
 
 public class TaskInfoController {
 
     private static final Logger log = Logger.getLogger(TaskInfoController.class.getName());
+    private final Task task;
+    private final Stage stage;
     @FXML
     private Label labelTitle;
     @FXML
@@ -23,20 +23,25 @@ public class TaskInfoController {
     @FXML
     private Label labelIsActive;
 
+    public TaskInfoController(final Task task, final Stage stage) {
+        this.task = task;
+        this.stage = stage;
+    }
+
+
     @FXML
     public void initialize(){
         log.info("task info window initializing");
-        Task currentTask = (Task)Controller.mainTable.getSelectionModel().getSelectedItem();
 
-        labelTitle.setText("Title: " + currentTask.getTitle());
-        labelStart.setText("Start time: " + currentTask.getFormattedDateStart());
-        labelEnd.setText("End time: " + currentTask.getFormattedDateEnd());
-        labelInterval.setText("Interval: " + currentTask.getFormattedRepeated());
-        labelIsActive.setText("Is active: " + (currentTask.isActive() ? "Yes" : "No"));
+        labelTitle.setText("Title: " + task.getTitle());
+        labelStart.setText("Start time: " + task.getFormattedDateStart());
+        labelEnd.setText("End time: " + task.getFormattedDateEnd());
+        labelInterval.setText("Interval: " + task.getFormattedRepeated());
+        labelIsActive.setText("Is active: " + (task.isActive() ? "Yes" : "No"));
     }
     @FXML
     public void closeWindow(){
-        Controller.infoStage.close();
+        this.stage.close();
     }
 
 }

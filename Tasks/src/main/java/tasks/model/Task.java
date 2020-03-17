@@ -16,16 +16,12 @@ public class Task implements Serializable, Cloneable {
     private boolean active;
 
     private static final Logger log = Logger.getLogger(Task.class.getName());
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
-    public static SimpleDateFormat getDateFormat(){
+    public SimpleDateFormat getDateFormat() {
         return sdf;
     }
     public Task(String title, Date start, Date end){
-        /*if (time.getTime() < 0) {
-            log.error("time below bound");
-            throw new IllegalArgumentException("Time cannot be negative");
-        }*/
         this.title = title;
         this.start = start;
         this.end = end;
@@ -78,7 +74,7 @@ public class Task implements Serializable, Cloneable {
     }
 
     public boolean isRepeated(){
-        return !(this.interval == 0);
+        return this.interval != 0;
 
     }
     public Date nextTimeAfter(Date current){

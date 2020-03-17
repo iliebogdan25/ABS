@@ -28,13 +28,11 @@ import java.util.Date;
 
 public class Controller {
     private static final Logger log = Logger.getLogger(Controller.class.getName());
-    public ObservableList<Task> tasksList;
+    private ObservableList<Task> tasksList;
     TasksService service;
     DateService dateService;
 
-    public static Stage infoStage;
-
-    public static TableView mainTable;
+    private TableView mainTable;
 
     @FXML
     public  TableView tasks;
@@ -106,7 +104,7 @@ public class Controller {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/new-edit-task.fxml"));
             loader.setController(controller);
-            Parent root = loader.load();//getClass().getResource("/fxml/new-edit-task.fxml"));
+            Parent root = loader.load();
 
             controller.setService(service);
             controller.setTasksList(tasksList);
@@ -142,12 +140,14 @@ public class Controller {
             }
             Stage stage = new Stage();
             FXMLLoader loader =new FXMLLoader(getClass().getResource("/fxml/task-info.fxml"));
+            TaskInfoController infoController = new TaskInfoController(currentTask, stage);
+            loader.setController(infoController);
             Parent root = loader.load();
+
             stage.setScene(new Scene(root, 550, 350));
             stage.setResizable(false);
             stage.setTitle("Info");
             stage.initModality(Modality.APPLICATION_MODAL);//??????
-            infoStage = stage;
             stage.show();
         }
         catch (IOException e){
@@ -176,7 +176,7 @@ public class Controller {
     }
 
     private Task getSelectedTask(final boolean showWarning) {
-        Task currentTask = (Task)Controller.mainTable.getSelectionModel().getSelectedItem();
+        Task currentTask = (Task) this.mainTable.getSelectionModel().getSelectedItem();
         if (currentTask == null && showWarning) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "No task selected.", ButtonType.CLOSE);
             alert.showAndWait();
