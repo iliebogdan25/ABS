@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" afterDir="false" />
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="Final commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/utils/ConstantUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/TaskInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/TaskInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/data/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,6 +162,7 @@
       <workItem from="1582489647132" duration="101000" />
       <workItem from="1582707308323" duration="157000" />
       <workItem from="1584382533134" duration="1772000" />
+      <workItem from="1584466979293" duration="5123000" />
     </task>
     <servers />
   </component>
@@ -187,6 +181,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="271" y="0" key="#Tasks_[exec:java]" />
@@ -221,7 +223,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java</url>
-          <line>167</line>
+          <line>101</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -231,23 +233,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
           <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java</url>
-          <line>12</line>
+          <line>27</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java</url>
-          <line>91</line>
+          <line>106</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

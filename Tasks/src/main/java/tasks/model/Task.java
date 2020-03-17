@@ -82,19 +82,28 @@ public class Task implements Serializable, Cloneable {
 
     }
     public Date nextTimeAfter(Date current){
-        if (current.after(end) || current.equals(end))return null;
-        if (isRepeated() && isActive()){
-            Date timeBefore  = start;
-            Date timeAfter = start;
-            if (current.before(start)){
-                return start;
+        if (!isActive()) {
+            return null;
+        }
+        if (!isRepeated()) {
+            if (start.before(current) && end.after(current)) {
+                return current;
             }
-            if ((current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end))){
-                for (long i = start.getTime(); i <= end.getTime(); i += interval*1000){
-                    if (current.equals(timeAfter)) return new Date(timeAfter.getTime()+interval*1000);
-                    if (current.after(timeBefore) && current.before(timeAfter)) return timeBefore;//return timeAfter
-                    timeBefore = timeAfter;
-                    timeAfter = new Date(timeAfter.getTime()+ interval*1000);
+        } else {
+            if (current.after(end) || current.equals(end)) return null;
+            if (isRepeated()) {
+                Date timeBefore = start;
+                Date timeAfter = start;
+                if (current.before(start)) {
+                    return start;
+                }
+                if ((current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end))) {
+                    for (long i = start.getTime(); i <= end.getTime(); i += interval * 1000) {
+                        if (current.equals(timeAfter)) return new Date(timeAfter.getTime() + interval * 1000);
+                        if (current.after(timeBefore) && current.before(timeAfter)) return timeBefore;//return timeAfter
+                        timeBefore = timeAfter;
+                        timeAfter = new Date(timeAfter.getTime() + interval * 1000);
+                    }
                 }
             }
         }
@@ -105,9 +114,15 @@ public class Task implements Serializable, Cloneable {
     public String getFormattedDateStart(){
         return sdf.format(start);
     }
+
     public String getFormattedDateEnd(){
         return sdf.format(end);
     }
+
+    public String getIntervalTime() {
+        return String.format("%s - %s", sdf.format(start), sdf.format(end));
+    }
+
     public String getFormattedRepeated(){
         if (isRepeated()){
             String formattedInterval = TaskIO.getFormattedInterval(interval);

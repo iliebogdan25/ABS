@@ -19,7 +19,7 @@ public class TasksOperations {
         ArrayList<Task> incomingTasks = new ArrayList<>();
         for (Task t : tasks) {
             Date nextTime = t.nextTimeAfter(start);
-            if (nextTime != null && (nextTime.before(end) || nextTime.equals(end))) {
+            if (nextTime != null && (nextTime.before(end) || nextTime.after(start)) || start.equals(nextTime)) {
                 incomingTasks.add(t);
                 System.out.println(t.getTitle());
             }

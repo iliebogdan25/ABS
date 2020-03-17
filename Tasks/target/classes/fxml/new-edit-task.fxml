@@ -28,7 +28,6 @@
       <AnchorPane prefHeight="134.0" prefWidth="600.0">
          <children>
             <Button defaultButton="true" layoutX="158.0" layoutY="32.0" mnemonicParsing="false" onAction="#saveChanges" prefWidth="100.0" text="Ok" />
-            <Button cancelButton="true" layoutX="323.0" layoutY="32.0" mnemonicParsing="false" onAction="#closeDialogWindow" prefWidth="100.0" text="Cancel" />
          </children>
       </AnchorPane>
    </children>
