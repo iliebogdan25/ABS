@@ -39,7 +39,7 @@ public class Notificator extends Thread {
                     }
                     else {
                         if (!t.isRepeated()){
-                            if (getTimeInMinutes(currentDate) == getTimeInMinutes(t.getTime())){
+                            if (getTimeInMinutes(currentDate) == getTimeInMinutes(t.getStartTime())){
                                 showNotification(t);
                             }
                         }

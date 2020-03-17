@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="" />
+    <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="Final commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/utils/ConstantUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/new-edit-task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/new-edit-task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Tasks" />
@@ -14,8 +45,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -25,6 +61,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1XnEHoqZMPZ1XnpQrub9xp7L4QM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,6 +70,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -40,7 +78,37 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tasks" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.view.Main" />
+      <module name="Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tasks [exec:java]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -67,6 +135,11 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -87,65 +160,99 @@
       <workItem from="1582286420057" duration="780000" />
       <workItem from="1582287916397" duration="1828000" />
       <workItem from="1582489647132" duration="101000" />
+      <workItem from="1582707308323" duration="157000" />
+      <workItem from="1584382533134" duration="1772000" />
+      <workItem from="1584466979293" duration="5123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="271" y="0" key="#Tasks_[exec:java]" timestamp="1581673618434">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="271" y="0" key="#Tasks_[exec:java]/0.0.1280.680@0.0.1280.680" timestamp="1581673618434" />
-    <state x="274" y="34" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581680739564">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="274" y="34" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" timestamp="1581680739564" />
-    <state x="382" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581684420368">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="382" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1581684420368" />
-    <state x="422" y="75" key="FileChooserDialogImpl" timestamp="1581686055269">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="422" y="75" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1581686055269" />
-    <state width="1237" height="96" key="GridCell.Tab.0.bottom" timestamp="1581690290257">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="96" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581690290257" />
-    <state width="1237" height="96" key="GridCell.Tab.0.center" timestamp="1581690290256">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="96" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581690290256" />
-    <state width="1237" height="96" key="GridCell.Tab.0.left" timestamp="1581690290256">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="96" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581690290256" />
-    <state width="1237" height="96" key="GridCell.Tab.0.right" timestamp="1581690290256">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="96" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581690290256" />
-    <state x="234" y="4" key="PlantUMLSettings" timestamp="1581682119270">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="234" y="4" key="PlantUMLSettings/0.0.1280.680@0.0.1280.680" timestamp="1581682119270" />
-    <state x="153" y="0" key="SettingsEditor" timestamp="1582287866784">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582287866784" />
-    <state x="351" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1582489645841">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="351" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582489645841" />
-    <state width="300" height="120" key="javadoc.popup.new" timestamp="1581678292839">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="300" height="120" key="javadoc.popup.new/0.0.1280.680@0.0.1280.680" timestamp="1581678292839" />
-    <state x="75" y="50" key="new project wizard" timestamp="1581687738169">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="75" y="50" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1581687738169" />
+    <state x="271" y="0" key="#Tasks_[exec:java]" />
+    <state x="271" y="0" key="#Tasks_[exec:java]/0.0.1280.680@0.0.1280.680" />
+    <state x="274" y="34" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" />
+    <state x="274" y="34" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" />
+    <state x="382" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" />
+    <state x="382" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" />
+    <state x="422" y="75" key="FileChooserDialogImpl" />
+    <state x="422" y="75" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" />
+    <state width="1237" height="96" key="GridCell.Tab.0.bottom" />
+    <state width="1237" height="96" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="1237" height="96" key="GridCell.Tab.0.center" />
+    <state width="1237" height="96" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" />
+    <state width="1237" height="96" key="GridCell.Tab.0.left" />
+    <state width="1237" height="96" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" />
+    <state width="1237" height="96" key="GridCell.Tab.0.right" />
+    <state width="1237" height="96" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" />
+    <state x="234" y="4" key="PlantUMLSettings" />
+    <state x="234" y="4" key="PlantUMLSettings/0.0.1280.680@0.0.1280.680" />
+    <state x="153" y="0" key="SettingsEditor" />
+    <state x="153" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" />
+    <state x="351" y="170" key="com.intellij.ide.util.TipDialog" />
+    <state x="351" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" />
+    <state width="300" height="120" key="javadoc.popup.new" />
+    <state width="300" height="120" key="javadoc.popup.new/0.0.1280.680@0.0.1280.680" />
+    <state x="75" y="50" key="new project wizard" />
+    <state x="75" y="50" key="new project wizard/0.0.1280.680@0.0.1280.680" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewEditController.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
+          <line>283</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/services/TaskIO.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/NewController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/controller/Controller.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
