@@ -18,9 +18,6 @@ public class Task implements Serializable, Cloneable {
     private static final Logger log = Logger.getLogger(Task.class.getName());
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
-    public static SimpleDateFormat getDateFormat(){
-        return sdf;
-    }
     public Task(String title, Date start, Date end){
         /*if (time.getTime() < 0) {
             log.error("time below bound");
@@ -29,6 +26,10 @@ public class Task implements Serializable, Cloneable {
         this.title = title;
         this.start = start;
         this.end = end;
+    }
+
+    public static SimpleDateFormat getDateFormat() {
+        return sdf;
     }
     public Task(String title, Date start, Date end, int interval){
         if (start.getTime() < 0 || end.getTime() < 0) {

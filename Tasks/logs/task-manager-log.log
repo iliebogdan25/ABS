@@ -400,3 +400,28 @@
 2020-03-17 21:09:15 INFO  Main:45 - application start
 2020-03-17 21:09:15 INFO  Controller:76 - Main controller initializing
 2020-03-17 21:09:23 INFO  TaskInfoController:28 - task info window initializing
+2020-03-17 22:57:58 INFO  Main:40 - saved data reading
+2020-03-17 22:57:58 ERROR TaskIO:86 - IO exception reading or writing file
+2020-03-17 22:57:58 INFO  Main:45 - application start
+2020-03-17 22:57:58 INFO  Controller:73 - Main controller initializing
+2020-03-17 22:58:08 INFO  NewEditController:69 - new/edit window initializing
+2020-03-17 22:58:10 INFO  NewEditController:111 - Task{title='asdasd', start=Tue Mar 17 08:00:00 EET 2020, end=Tue Mar 17 10:00:00 EET 2020, interval=0, active=false}
+2020-03-17 22:58:11 ERROR Controller:151 - error loading task-info.fxml
+2020-03-17 23:00:20 INFO  Main:40 - saved data reading
+2020-03-17 23:00:20 INFO  Main:45 - application start
+2020-03-17 23:00:20 INFO  Controller:73 - Main controller initializing
+2020-03-17 23:00:51 INFO  Main:40 - saved data reading
+2020-03-17 23:00:51 INFO  Main:45 - application start
+2020-03-17 23:00:51 INFO  Controller:73 - Main controller initializing
+2020-03-17 23:00:54 INFO  TaskInfoController:37 - task info window initializing
+2020-03-17 23:00:54 ERROR Controller:154 - error loading task-info.fxml
+2020-03-17 23:01:02 INFO  TaskInfoController:37 - task info window initializing
+2020-03-17 23:01:02 ERROR Controller:154 - error loading task-info.fxml
+2020-03-17 23:03:46 INFO  Main:40 - saved data reading
+2020-03-17 23:03:46 INFO  Main:45 - application start
+2020-03-17 23:03:47 INFO  Controller:73 - Main controller initializing
+2020-03-17 23:03:49 ERROR Controller:153 - error loading task-info.fxml
+2020-03-17 23:04:20 INFO  Main:40 - saved data reading
+2020-03-17 23:04:20 INFO  Main:45 - application start
+2020-03-17 23:04:20 INFO  Controller:73 - Main controller initializing
+2020-03-17 23:04:23 INFO  TaskInfoController:35 - task info window initializing

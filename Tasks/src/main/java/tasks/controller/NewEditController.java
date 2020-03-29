@@ -91,7 +91,6 @@ public abstract class NewEditController {
     public abstract void saveChanges();
 
 
-
     protected Task makeTask() throws IllegalArgumentException {
         Task result;
         String newTitle = fieldTitle.getText();

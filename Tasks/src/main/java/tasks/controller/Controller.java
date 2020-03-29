@@ -28,13 +28,11 @@ import java.util.Date;
 
 public class Controller {
     private static final Logger log = Logger.getLogger(Controller.class.getName());
-    public ObservableList<Task> tasksList;
+    public static Stage infoStage;
     TasksService service;
     DateService dateService;
-
-    public static Stage infoStage;
-
     public static TableView mainTable;
+    public ObservableList<Task> tasksList;
 
     @FXML
     public  TableView tasks;
@@ -176,7 +174,7 @@ public class Controller {
     }
 
     private Task getSelectedTask(final boolean showWarning) {
-        Task currentTask = (Task)Controller.mainTable.getSelectionModel().getSelectedItem();
+        Task currentTask = (Task) Controller.mainTable.getSelectionModel().getSelectedItem();
         if (currentTask == null && showWarning) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "No task selected.", ButtonType.CLOSE);
             alert.showAndWait();

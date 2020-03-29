@@ -8,6 +8,9 @@ import tasks.model.TasksOperations;
 import java.util.Date;
 import java.util.List;
 
+import static tasks.services.DateService.addMonths;
+import static tasks.services.DateService.addYears;
+
 public class TasksService {
 
     private List<Task> tasks;
@@ -40,15 +43,52 @@ public class TasksService {
         String[] units = stringTime.split(":");
         int hours = Integer.parseInt(units[0]);
         int minutes = Integer.parseInt(units[1]);
-        int result = (hours * DateService.MINUTES_IN_HOUR + minutes) * DateService.SECONDS_IN_MINUTE;
-        return result;
+        return (hours * DateService.MINUTES_IN_HOUR + minutes) * DateService.SECONDS_IN_MINUTE;
     }
 
     public Iterable<Task> filterTasks(Date start, Date end){
         TasksOperations tasksOps = new TasksOperations(getObservableList());
-        Iterable<Task> filtered = tasksOps.incoming(start,end);
-        //Iterable<Task> filtered = tasks.incoming(start, end);
-
-        return filtered;
+        return tasksOps.incoming(start, end);
     }
+
+    public Task saveTask(final String title, final Date start, final Date end, final int interval, final boolean isActive) {
+        if (interval < 1) {
+            throw new IllegalArgumentException("Interval must be > 0");
+        }
+        validateCommonArguments(title, start, end);
+        Task task = new Task(title, start, end, interval);
+        task.setActive(isActive);
+        return task;
+    }
+
+    public Task saveTask(final String title, final Date start, final Date end, final boolean isActive) {
+        validateCommonArguments(title, start, end);
+
+        Task task = new Task(title, start, end);
+        task.setActive(isActive);
+        return task;
+    }
+
+    public void validateCommonArguments(final String title, final Date start, final Date end) {
+        if (start.before(addMonths(-1))) {
+            throw new IllegalArgumentException("The start date must be no more than one month earlier than the current date.");
+        }
+        if (end.before(addMonths(-1))) {
+            throw new IllegalArgumentException("The end date must be no more than one month earlier than the current date.");
+        }
+        if (end.after(addYears(2))) {
+            throw new IllegalArgumentException("The end date must be no more than 2 years later than the start date.");
+        }
+        if (start.after(addYears(2))) {
+            throw new IllegalArgumentException("The start date must be no more than 2 years later than the start date.");
+        }
+        if (end.before(start)) {
+            throw new IllegalArgumentException("Start must be before End.");
+        }
+        if (title == null || (title.trim().isEmpty())) {
+            throw new IllegalArgumentException("Title must not be empty");
+        }
+    }
+
+
 }
