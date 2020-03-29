@@ -10,8 +10,8 @@ import java.util.Date;
 
 public class Notificator extends Thread {
 
-    private static final long MILLISECONDS_IN_SEC = 1000;
-    private static final long SECONDS_IN_MIN = 60;
+    private static final int millisecondsInSec = 1000;
+    private static final int secondsInMin = 60;
 
     private static final Logger log = Logger.getLogger(Notificator.class.getName());
 
@@ -23,11 +23,13 @@ public class Notificator extends Thread {
 
     public static void showNotification(Task task) {
         log.info("push notification showing");
-        Platform.runLater(() -> Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation());
+        Platform.runLater(() -> {
+            Notifications.create().title("Task reminder").text("It's time for " + task.getTitle()).showInformation();
+        });
     }
 
     private static long getTimeInMinutes(Date date) {
-        return date.getTime() / MILLISECONDS_IN_SEC / SECONDS_IN_MIN;
+        return date.getTime() / millisecondsInSec / secondsInMin;
     }
 
     @Override
@@ -46,8 +48,10 @@ public class Notificator extends Thread {
                             showNotification(t);
                         }
                     } else {
-                        if (!t.isRepeated() && getTimeInMinutes(currentDate) == getTimeInMinutes(t.getStartTime())) {
-                            showNotification(t);
+                        if (!t.isRepeated()) {
+                            if (getTimeInMinutes(currentDate) == getTimeInMinutes(t.getStartTime())) {
+                                showNotification(t);
+                            }
                         }
 
                     }
@@ -55,7 +59,7 @@ public class Notificator extends Thread {
 
             }
             try {
-                Thread.sleep(MILLISECONDS_IN_SEC * SECONDS_IN_MIN);
+                Thread.sleep(millisecondsInSec * secondsInMin);
 
             } catch (InterruptedException e) {
                 log.error("thread interrupted exception");
