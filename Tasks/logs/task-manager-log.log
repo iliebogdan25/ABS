@@ -689,3 +689,39 @@
 2020-05-05 16:37:20 INFO  NewEditController:69 - new/edit window initializing
 2020-05-05 16:37:24 INFO  NewEditController:69 - new/edit window initializing
 2020-05-05 16:37:31 INFO  NewEditController:69 - new/edit window initializing
+2020-05-05 20:53:51 INFO  TasksOperations:23 - Incoming task: Thu Mar 05 20:53:51 EET 2020 -> Tue May 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 INFO  TasksOperations:41 - No task for this period.
+2020-05-05 20:53:51 INFO  TasksOperations:23 - Incoming task: Tue May 05 20:53:51 EEST 2020 -> Wed Aug 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 INFO  TasksOperations:34 - Ilie Boss
+2020-05-05 20:53:51 INFO  TasksOperations:34 - Ilie Boss
+2020-05-05 20:53:51 INFO  TasksOperations:23 - Incoming task: Thu Mar 05 20:53:51 EET 2020 -> Sun Apr 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 INFO  TasksOperations:37 - Ilie Boss is not fit
+2020-05-05 20:53:51 INFO  TasksOperations:41 - No task for this period.
+2020-05-05 20:53:51 INFO  TasksOperations:23 - Incoming task: Sun Jul 05 20:53:51 EEST 2020 -> Tue May 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 WARN  TasksOperations:26 - Sun Jul 05 20:53:51 EEST 2020 is after Tue May 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 INFO  TasksOperations:23 - Incoming task: Tue May 05 20:53:51 EEST 2020 -> Fri Jun 05 20:53:51 EEST 2020
+2020-05-05 20:53:51 INFO  TasksOperations:41 - No task for this period.
+2020-05-05 21:35:01 INFO  TasksOperations:33 - Incoming task: Thu Mar 05 21:35:01 EET 2020 -> Tue May 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 INFO  TasksOperations:51 - No task for this period.
+2020-05-05 21:35:01 INFO  TasksOperations:33 - Incoming task: Tue May 05 21:35:01 EEST 2020 -> Wed Aug 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 INFO  TasksOperations:44 - Ilie Boss
+2020-05-05 21:35:01 INFO  TasksOperations:44 - Ilie Boss
+2020-05-05 21:35:01 INFO  TasksOperations:33 - Incoming task: Thu Mar 05 21:35:01 EET 2020 -> Sun Apr 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 INFO  TasksOperations:47 - Ilie Boss is not fit
+2020-05-05 21:35:01 INFO  TasksOperations:51 - No task for this period.
+2020-05-05 21:35:01 INFO  TasksOperations:33 - Incoming task: Sun Jul 05 21:35:01 EEST 2020 -> Tue May 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 WARN  TasksOperations:36 - Sun Jul 05 21:35:01 EEST 2020 is after Tue May 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 INFO  TasksOperations:33 - Incoming task: Tue May 05 21:35:01 EEST 2020 -> Fri Jun 05 21:35:01 EEST 2020
+2020-05-05 21:35:01 INFO  TasksOperations:51 - No task for this period.
+2020-05-05 21:56:41 INFO  TasksOperations:33 - Incoming task: Thu Mar 05 21:56:41 EET 2020 -> Tue May 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 INFO  TasksOperations:51 - No task for this period.
+2020-05-05 21:56:41 INFO  TasksOperations:33 - Incoming task: Tue May 05 21:56:41 EEST 2020 -> Wed Aug 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 INFO  TasksOperations:44 - Ilie Boss
+2020-05-05 21:56:41 INFO  TasksOperations:44 - Ilie Boss
+2020-05-05 21:56:41 INFO  TasksOperations:33 - Incoming task: Thu Mar 05 21:56:41 EET 2020 -> Sun Apr 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 INFO  TasksOperations:47 - Ilie Boss is not fit
+2020-05-05 21:56:41 INFO  TasksOperations:51 - No task for this period.
+2020-05-05 21:56:41 INFO  TasksOperations:33 - Incoming task: Sun Jul 05 21:56:41 EEST 2020 -> Tue May 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 WARN  TasksOperations:36 - Sun Jul 05 21:56:41 EEST 2020 is after Tue May 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 INFO  TasksOperations:33 - Incoming task: Tue May 05 21:56:41 EEST 2020 -> Fri Jun 05 21:56:41 EEST 2020
+2020-05-05 21:56:41 INFO  TasksOperations:51 - No task for this period.

@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperationStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/ValidatorStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/IntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/IntegrationTestServiceRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Tasks.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList$ArrayTaskListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$LinkedTaskListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/repos/TasksRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/repos/TasksRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" afterDir="false" />
     </list>
     <list id="c479f672-2eed-4ee2-bae2-69909b128e03" name="Revert &quot;Final commit&quot;" comment="Revert &quot;Final commit&quot;&#10;&#10;This reverts commit fa4186ec" />
@@ -94,6 +93,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -113,21 +115,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tasks.view.Main" />
+  <component name="RunManager" selected="JUnit.IntegrationTest">
+    <configuration name="IntegrationTest and 5 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tasks.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="tasks.IntegrationTest" />
+        <pattern testClass="tasks.IntegrationTestServiceRepo" />
+        <pattern testClass="tasks.TestTask" />
+        <pattern testClass="tasks.TestTaskRepository" />
+        <pattern testClass="tasks.TestTasksOperations" />
+        <pattern testClass="tasks.TestTasksService" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTasksOperations (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
@@ -136,31 +140,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksOperations" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:tasks.TestTasksOperations]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTasksOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksOperations" />
+      <option name="MAIN_CLASS_NAME" value="tasks.IntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTasksOperations.invalidRepeted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTestServiceRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
@@ -169,14 +155,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksOperations" />
-      <option name="METHOD_NAME" value="invalidRepeted" />
+      <option name="MAIN_CLASS_NAME" value="tasks.IntegrationTestServiceRepo" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTestServiceRepo.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tasks" />
+      <option name="MAIN_CLASS_NAME" value="tasks.IntegrationTestServiceRepo" />
+      <option name="METHOD_NAME" value="testSave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTasksService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +186,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksService" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tasks.IntegrationTest" />
+      <option name="METHOD_NAME" value="testRemove" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestTasksOperations" />
-        <item itemvalue="JUnit.TestTasksService" />
-        <item itemvalue="JUnit.TestTasksOperations.invalidRepeted" />
-        <item itemvalue="JUnit.TestTasksOperations (3)" />
+        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.IntegrationTest and 5 more" />
+        <item itemvalue="JUnit.IntegrationTest.testRemove" />
+        <item itemvalue="JUnit.IntegrationTestServiceRepo" />
+        <item itemvalue="JUnit.IntegrationTestServiceRepo.testSave" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +258,7 @@
       <workItem from="1585919929887" duration="12000" />
       <workItem from="1586770928644" duration="2727000" />
       <workItem from="1588617188143" duration="6928000" />
-      <workItem from="1588683588845" duration="2622000" />
+      <workItem from="1588683588845" duration="11887000" />
     </task>
     <task id="LOCAL-00001" summary="Unittest">
       <created>1585512291239</created>

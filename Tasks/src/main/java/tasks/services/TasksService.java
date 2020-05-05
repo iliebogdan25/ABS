@@ -4,19 +4,27 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
+import tasks.model.Validator;
 import tasks.repos.TasksRepository;
 
 import java.util.Date;
-import java.util.List;
 
 import static tasks.services.DateService.addMonths;
 import static tasks.services.DateService.addYears;
 
 public class TasksService {
     private TasksRepository tasksRepository;
+    private TasksOperations tasksOperations;
+    private Validator validator = new Validator();
 
     public TasksService(TasksRepository tasksRepository){
+        tasksOperations = new TasksOperations();
         this.tasksRepository = tasksRepository;
+    }
+
+    public TasksService(TasksRepository tasksRepository, TasksOperations tasksOperations){
+        this.tasksRepository = tasksRepository;
+        this.tasksOperations = tasksOperations;
     }
 
 
@@ -47,40 +55,30 @@ public class TasksService {
     }
 
     public Iterable<Task> filterTasks(Date start, Date end){
-        TasksOperations tasksOps = new TasksOperations(getObservableList());
-        return tasksOps.incoming(start, end);
+        return tasksOperations.incoming(getObservableList(), start, end);
     }
 
     public Task saveTask(final String title, final Date start, final Date end, final int interval, final boolean isActive) {
+        return saveTask(title, start, end, interval, isActive, validator);
+    }
+
+    public Task saveTask(final String title, final Date start, final Date end, final int interval, final boolean isActive, final Validator validator) {
         if (interval < 1) {
             throw new IllegalArgumentException("Interval must be > 0");
         }
-        validateCommonArguments(title, start, end);
+        validator.validateCommonArguments(title, start, end);
         Task task = new Task(title, start, end, interval);
         task.setActive(isActive);
+        tasksRepository.add(task);
         return task;
     }
 
-    public void validateCommonArguments(final String title, final Date start, final Date end) {
-        if (start.before(addMonths(-1))) {
-            throw new IllegalArgumentException("The start date must be no more than one month earlier than the current date.");
-        }
-        if (end.before(addMonths(-1))) {
-            throw new IllegalArgumentException("The end date must be no more than one month earlier than the current date.");
-        }
-        if (end.after(addYears(2))) {
-            throw new IllegalArgumentException("The end date must be no more than 2 years later than the start date.");
-        }
-        if (start.after(addYears(2))) {
-            throw new IllegalArgumentException("The start date must be no more than 2 years later than the start date.");
-        }
-        if (end.before(start)) {
-            throw new IllegalArgumentException("Start must be before End.");
-        }
-        if (title == null || (title.trim().isEmpty())) {
-            throw new IllegalArgumentException("Title must not be empty");
-        }
+
+    public int getSize() {
+        return tasksRepository.size();
     }
 
-
+    public void remove(Task task) {
+        tasksRepository.remove(task);
+    }
 }

@@ -9,17 +9,20 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.Mockito;
 import tasks.model.Task;
 import tasks.repos.TasksRepository;
 import tasks.services.DateService;
 import tasks.services.TasksService;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.spy;
 
 public class TestTasksService {
     static TasksService tasksService;
@@ -122,5 +125,28 @@ public class TestTasksService {
         Date end = DateService.addYears(1);
 
         return createTaskInService("ANA", start, end, interval);
+    }
+
+    @Test
+    public void testGetSize() {
+        TasksRepository tasksRepository = new TasksRepository();
+        TasksRepository spyTaskRepo = spy(tasksRepository);
+
+        TasksService tasksService = new TasksService(spyTaskRepo);
+        Mockito.doReturn(2).when(spyTaskRepo).size();
+
+        assertEquals(tasksService.getSize(), 2);
+    }
+
+    @Test
+    public void testGetObservableList() {
+        TasksRepository tasksRepository = new TasksRepository();
+        TasksRepository spyTaskRepo = spy(tasksRepository);
+
+        Task task = new Task("Ilie", new Date(), new Date());
+        Mockito.doReturn(Arrays.asList(task)).when(spyTaskRepo).getTaskList();
+        TasksService tasksService = new TasksService(spyTaskRepo);
+
+        assertTrue(tasksService.getObservableList().contains(task));
     }
 }

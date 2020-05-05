@@ -16,7 +16,19 @@ public class TasksRepository {
         this.taskList = tasks;
     }
 
+    public void remove(final Task task) {
+        taskList.remove(task);
+    }
+
+    public void add(final Task task) {
+        taskList.add(task);
+    }
+
     public List<Task> getTaskList() {
-        return taskList;
+        return new ArrayList<>(taskList);
+    }
+
+    public int size() {
+        return taskList.size();
     }
 }
