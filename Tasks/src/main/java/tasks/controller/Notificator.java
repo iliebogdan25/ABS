@@ -56,7 +56,6 @@ public class Notificator extends Thread {
 
                     }
                 }
-
             }
             try {
                 Thread.sleep(millisecondsInSec * secondsInMin);

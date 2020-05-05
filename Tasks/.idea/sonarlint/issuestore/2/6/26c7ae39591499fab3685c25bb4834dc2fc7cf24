@@ -1,0 +1,55 @@
+
+c
+java:S2259T"AA "NullPointerException" could be thrown; "fis" is nullable here.(ß¶­†ÿÿÿÿÿ8Î«Ÿ¿’.
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ôâ»Ô8Î«Ÿ¿’.
+u	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¼ÌÔ;8Î«Ÿ¿’.
+L
+java:S2093N"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.
+d
+java:S3027Æ"FPut single-quotes around '[' to use the faster "indexOf(char)" method.(÷…‹8Î«Ÿ¿’.
+d
+java:S3027Ê"FPut single-quotes around '[' to use the faster "indexOf(char)" method.(†Ùí”8Î«Ÿ¿’.
+L
+java:S2093*"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.
+m
+java:S3027š"JPut single-quotes around ']' to use the faster "lastIndexOf(char)" method.(®Ñ­Õúÿÿÿÿ8Î«Ÿ¿’.
+‚
+java:S1192F"eDefine a constant instead of duplicating this literal "IO exception reading or writing file" 4 times.(ÌÔü¦8Î«Ÿ¿’.
+D
+java:S1659Ã"!Declare "end" on a separate line.(ÍôÁÑıÿÿÿÿ8Î«Ÿ¿’.
+F
+java:S1659•"#Declare "hours" on a separate line.(ÚåÏ¾üÿÿÿÿ8Î«Ÿ¿’.
+B
+java:S1659¢"Declare "j" on a separate line.(Ù é®şÿÿÿÿ8Î«Ÿ¿’.
+H
+java:S1659•"%Declare "minutes" on a separate line.(ÚåÏ¾üÿÿÿÿ8Î«Ÿ¿’.
+H
+java:S1659•"%Declare "seconds" on a separate line.(ÚåÏ¾üÿÿÿÿ8Î«Ÿ¿’.
+i
+java:S3027Ë"FPut single-quotes around ']' to use the faster "indexOf(char)" method.(¼ÅÈ¶ÿÿÿÿÿ8Î«Ÿ¿’.
+d
+java:S3027É"FPut single-quotes around ']' to use the faster "indexOf(char)" method.(¶…¦8Î«Ÿ¿’.
+n
+java:S3027Ù"KPut single-quotes around '\"' to use the faster "lastIndexOf(char)" method.(Ê·«Ãûÿÿÿÿ8Î«Ÿ¿’.
+c
+java:S2259H"AA "NullPointerException" could be thrown; "fos" is nullable here.(æŒÕ®ùÿÿÿÿ8Î«Ÿ¿’.
+m
+java:S3027™"JPut single-quotes around '[' to use the faster "lastIndexOf(char)" method.(Šöèéıÿÿÿÿ8Î«Ÿ¿’.
+L
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.
+L
+java:S2093{"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.
+=
+java:S1659"Declare "j" on a separate line.(±é…8Î«Ÿ¿’.
+^	java:S125¨"<This block of commented-out lines of code should be removed.(À›¸Öûÿÿÿÿ8Î«Ÿ¿’.
+d
+java:S3027Ç"FPut single-quotes around ']' to use the faster "indexOf(char)" method.(ÏÙã™8Î«Ÿ¿’.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Ğœê†úÿÿÿÿ8ÑŞ…¿’.
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(İ–ë“ûÿÿÿÿ8Î«Ÿ¿’.
+O
+java:S2885"-Make "simpleDateFormat" an instance variable.(ËÒÌıøÿÿÿÿ8ÑŞ…¿’.
+L
+java:S2093B"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.
+L
+java:S2093p"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Î«Ÿ¿’.

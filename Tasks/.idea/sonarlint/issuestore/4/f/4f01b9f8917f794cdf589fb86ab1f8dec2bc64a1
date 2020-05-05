@@ -1,0 +1,11 @@
+
+’
+java:S1319"pThe type of the "tasks" object should be an interface such as "List" rather than the implementation "ArrayList".(±ø¢Èûÿÿÿÿ8ÿÄÛ‡.
+a
+java:S1128"?Remove this unused import 'tasks.controller.NewEditController'.(µŞ†›üÿÿÿÿ8ÿÄÛ‡.
+s
+java:S1104"QMake tasks a static final constant or non-public and provide accessors if needed.(±ø¢Èûÿÿÿÿ8ÿÄÛ‡.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(÷ºâÿÿÿÿÿÿ8ÿÄÛ‡.
+[
+java:S1155(">Use isEmpty() to check whether the collection is empty or not.(³Ñ·ğ8ÿÄÛ‡.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ãšİêùÿÿÿÿ8ÿÄÛ‡.

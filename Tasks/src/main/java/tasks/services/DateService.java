@@ -24,6 +24,33 @@ public class DateService {
 
     }
 
+    public static Date addMonths(int numMonths) {
+        Date date = new Date();
+        date.setMonth((date.getMonth() - 1 + numMonths) % 12 + 1);
+        return date;
+    }
+
+    public static Date addMonths(int numMonths, int numDays) {
+        Date date = new Date();
+        date.setMonth((date.getMonth() - 1 + numMonths) % 12 + 1);
+        date.setDate(date.getDate() + numDays);
+        return date;
+    }
+
+    public static Date addYears(int numYears) {
+        Date date = new Date();
+        date.setYear(date.getYear() + numYears);
+        return date;
+    }
+
+    public static Date addYears(int numYears, int numDays) {
+        Date date = new Date();
+        date.setYear((date.getYear() + numYears));
+        date.setDate((date.getDay() - 1 + numDays) % 7 + 1);
+
+        return date;
+    }
+
     public Date getDateValueFromLocalDate(LocalDate localDate) {//for getting from DatePicker
         Instant instant = Instant.from(localDate.atStartOfDay(ZoneId.systemDefault()));
         return Date.from(instant);

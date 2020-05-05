@@ -1,0 +1,9 @@
+
+I
+java:S1602",Remove useless curly braces around statement(ÃÉþ©8¡Õß‡ž.
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(©Ù§š8¡Õß‡ž.
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ý–ë“ûÿÿÿÿ8¡Õß‡ž.
+Q
+java:S10664"/Merge this if statement with the enclosing one.(ÝµÿÓúÿÿÿÿ8¡Õß‡ž.
+c
+java:S2184="FCast one of the operands of this multiplication operation to a "long".(Ž …“8¡Õß‡ž.
