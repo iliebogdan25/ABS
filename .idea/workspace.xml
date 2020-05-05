@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperationStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/model/ValidatorStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/IntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/IntegrationTestServiceRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c7ae39591499fab3685c25bb4834dc2fc7cf24" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26c7ae39591499fab3685c25bb4834dc2fc7cf24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63fe2cc9c3e91dd6fea9fe629ea649e64db0d708" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63fe2cc9c3e91dd6fea9fe629ea649e64db0d708" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4e952c1a4765c6cf9a337826a42d32c3f95db7f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4e952c1a4765c6cf9a337826a42d32c3f95db7f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba27869b1e0ea8fe162ea3b4618a07816f29da05" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba27869b1e0ea8fe162ea3b4618a07816f29da05" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ecf3c385b36af4d118754ee8d9878c48978fcaa9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ecf3c385b36af4d118754ee8d9878c48978fcaa9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/TasksOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/repos/TasksRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/repos/TasksRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tasks/IntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tasks/IntegrationTest.class" afterDir="false" />
     </list>
     <list id="c479f672-2eed-4ee2-bae2-69909b128e03" name="Revert &quot;Final commit&quot;" comment="Revert &quot;Final commit&quot;&#10;&#10;This reverts commit fa4186ec" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest">
+  <component name="RunManager" selected="JUnit.IntegrationTest and 5 more">
     <configuration name="IntegrationTest and 5 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tasks" />
       <option name="TEST_OBJECT" value="pattern" />
@@ -221,8 +211,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IntegrationTest" />
         <item itemvalue="JUnit.IntegrationTest and 5 more" />
+        <item itemvalue="JUnit.IntegrationTest" />
         <item itemvalue="JUnit.IntegrationTest.testRemove" />
         <item itemvalue="JUnit.IntegrationTestServiceRepo" />
         <item itemvalue="JUnit.IntegrationTestServiceRepo.testSave" />
@@ -259,6 +249,7 @@
       <workItem from="1586770928644" duration="2727000" />
       <workItem from="1588617188143" duration="6928000" />
       <workItem from="1588683588845" duration="11887000" />
+      <workItem from="1588710280481" duration="1027000" />
     </task>
     <task id="LOCAL-00001" summary="Unittest">
       <created>1585512291239</created>
