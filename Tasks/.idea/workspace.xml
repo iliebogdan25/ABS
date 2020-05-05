@@ -2,34 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTasksOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/665dec39384a747ccf12fd544bf02f4a3d18695a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4e952c1a4765c6cf9a337826a42d32c3f95db7f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4e952c1a4765c6cf9a337826a42d32c3f95db7f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e4a1f17f000c14a51c1b4832557db4be154b6363" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/repos/TasksRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/task-manager-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/task-manager-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/controller/Notificator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/DateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/DateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/field-validator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/field-validator.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/NewEditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/Notificator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/controller/TaskInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/DateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/DateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TaskIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/services/TasksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tasks/TestTasksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Tasks.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList$ArrayTaskListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/ArrayTaskList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$LinkedTaskListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/LinkedTaskList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/model/TaskList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/services/TasksService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/view/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tasks/TestTasksService.class" afterDir="false" />
     </list>
-    <list id="c479f672-2eed-4ee2-bae2-69909b128e03" name="Revert &quot;Final commit&quot;" comment="Revert &quot;Final commit&quot;&#10;&#10;This reverts commit fa4186ec">
-      <change beforePath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/task-info.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/task-info.fxml" afterDir="false" />
-    </list>
+    <list id="c479f672-2eed-4ee2-bae2-69909b128e03" name="Revert &quot;Final commit&quot;" comment="Revert &quot;Final commit&quot;&#10;&#10;This reverts commit fa4186ec" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +69,6 @@
       </set>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/tasks/model/TasksOperations.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="5" changelist="c479f672-2eed-4ee2-bae2-69909b128e03" />
-        <range start1="8" end1="8" start2="9" end2="10" changelist="c479f672-2eed-4ee2-bae2-69909b128e03" />
-        <range start1="10" end1="11" start2="12" end2="13" changelist="c479f672-2eed-4ee2-bae2-69909b128e03" />
-        <range start1="18" end1="20" start2="20" end2="23" changelist="c479f672-2eed-4ee2-bae2-69909b128e03" />
-        <range start1="21" end1="21" start2="24" end2="28" changelist="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" />
-        <range start1="23" end1="26" start2="30" end2="37" changelist="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" />
-        <range start1="28" end1="28" start2="39" end2="42" changelist="bbe79f98-8ba9-4627-a3ca-7e0c8d7562fb" />
-      </ranges>
-    </file>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -132,39 +113,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestTasksOperations">
-    <configuration name="TestTasksOperations (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.view.Main" />
       <module name="Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tasks.*" />
+          <option name="PATTERN" value="tasks.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksOperations" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:tasks.TestTasksOperations]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTasksOperations (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksOperations" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:tasks.TestTasksOperations]" />
-      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,6 +176,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTasksService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tasks" />
+      <option name="MAIN_CLASS_NAME" value="tasks.TestTasksService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tasks [exec:java]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -246,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestTasksOperations" />
+        <item itemvalue="JUnit.TestTasksService" />
         <item itemvalue="JUnit.TestTasksOperations.invalidRepeted" />
         <item itemvalue="JUnit.TestTasksOperations (3)" />
-        <item itemvalue="JUnit.TestTasksOperations (2)" />
-        <item itemvalue="JUnit.TestTasksOperations (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +256,7 @@
       <workItem from="1585919929887" duration="12000" />
       <workItem from="1586770928644" duration="2727000" />
       <workItem from="1588617188143" duration="6928000" />
+      <workItem from="1588683588845" duration="2622000" />
     </task>
     <task id="LOCAL-00001" summary="Unittest">
       <created>1585512291239</created>

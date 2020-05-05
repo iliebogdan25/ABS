@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
+import tasks.repos.TasksRepository;
 
 import java.util.Date;
 import java.util.List;
@@ -12,16 +13,15 @@ import static tasks.services.DateService.addMonths;
 import static tasks.services.DateService.addYears;
 
 public class TasksService {
+    private TasksRepository tasksRepository;
 
-    private List<Task> tasks;
-
-    public TasksService(List<Task> tasks){
-        this.tasks = tasks;
+    public TasksService(TasksRepository tasksRepository){
+        this.tasksRepository = tasksRepository;
     }
 
 
     public ObservableList<Task> getObservableList(){
-        return FXCollections.observableArrayList(tasks);
+        return FXCollections.observableArrayList(tasksRepository.getTaskList());
     }
     public String getIntervalInHours(Task task){
         int seconds = task.getRepeatInterval();
@@ -57,14 +57,6 @@ public class TasksService {
         }
         validateCommonArguments(title, start, end);
         Task task = new Task(title, start, end, interval);
-        task.setActive(isActive);
-        return task;
-    }
-
-    public Task saveTask(final String title, final Date start, final Date end, final boolean isActive) {
-        validateCommonArguments(title, start, end);
-
-        Task task = new Task(title, start, end);
         task.setActive(isActive);
         return task;
     }

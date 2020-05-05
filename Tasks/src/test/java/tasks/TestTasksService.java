@@ -10,6 +10,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 import tasks.model.Task;
+import tasks.repos.TasksRepository;
 import tasks.services.DateService;
 import tasks.services.TasksService;
 
@@ -27,7 +28,7 @@ public class TestTasksService {
     @BeforeAll
     public static void setup() {
         List<Task> tasks = new ArrayList<>();
-        tasksService = new TasksService(tasks);
+        tasksService = new TasksService(new TasksRepository(tasks));
     }
 
     private static Stream<Arguments> invalidStartTime() {

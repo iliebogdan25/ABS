@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import tasks.controller.Controller;
 import tasks.controller.Notificator;
 import tasks.model.Task;
+import tasks.repos.TasksRepository;
 import tasks.services.TaskIO;
 import tasks.services.TasksService;
 
@@ -31,7 +32,7 @@ public class Main extends Application {
     private static ClassLoader classLoader = Main.class.getClassLoader();
     public static File savedTasksFile = new File(classLoader.getResource("data/tasks.txt").getFile());
 
-    private TasksService service = new TasksService(savedTasksList);
+    private TasksService service;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -46,7 +47,8 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
             Parent root = loader.load();
             Controller ctrl= loader.getController();
-            service = new TasksService(savedTasksList);
+            TasksRepository tasksRepository = new TasksRepository(savedTasksList);
+            service = new TasksService(tasksRepository);
 
             ctrl.setService(service);
             primaryStage.setTitle("Task Manager");
